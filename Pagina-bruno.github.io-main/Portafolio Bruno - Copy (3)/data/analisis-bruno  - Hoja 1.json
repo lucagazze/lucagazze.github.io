@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "empresa": "SALESFORCE",
+    "fecha": "01/03/2021",
+    "imagen": "salesforce",
+    "category": "ultimos",
+    "href": "SALESFORCE"
+  },
+  {
+    "id": "2",
+    "empresa": "MERCADO LIBRE",
+    "imagen": "mercadolibre",
+    "fecha": "15/03/2021",
+    "category": "ultimos"
+  },
+  {
+    "id": "3",
+    "empresa": "TESLA",
+    "fecha": "15/01/2021",
+    "imagen": "tesla",
+    "category": "ultimos",
+    "href": "TESLA"
+  },
+  {
+    "id": "4",
+    "empresa": "AMD",
+    "fecha": "2021-12-15T03:00:00.000Z",
+    "imagen": "amd",
+    "category": "menospopulares",
+    "href": "AMD"
+  },
+  {
+    "id": "5",
+    "empresa": "ALIBABA",
+    "fecha": "18/11/2021",
+    "imagen": "alibaba",
+    "category": "ultimos",
+    "href": "Alibaba"
+  },
+  {
+    "id": "6",
+    "empresa": "UBER",
+    "fecha": "10/01/2021",
+    "imagen": "uber",
+    "category": "maspopulares",
+    "href": "Uber"
+  },
+  {
+    "id": "7",
+    "empresa": "REVOLVE",
+    "fecha": "01/04/2021",
+    "imagen": "revolve",
+    "category": "consumodefensivo",
+    "href": "REVOLVE"
+  }
+]

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/analisis.css">
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Analisis Bruno Gazze</title>
+
+    <!--MODULOS JS-->
+    <script src="../js/buscador.js" type="module"></script>
+    <script src="../js/exportar.js" nomodule></script>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <!--Navbar-->
+
+            <section class="navbar">
+                <div class="max-width">
+                    <div class="logo"><a href="./index.html">B<span>G.</span></a></div>
+                    <ul class="menu">
+                        <li><a href="./index.html">Inicio</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Filtros-->
+            <div class="title">Analisis de Empresas</div>
+            <form action="" class="barra">
+                
+                <input type="search" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar...">
+            </form>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"> SECTORES</i>
+            </div>
+                <div class="categorias" id="categorias">
+                    <a href="#" class="category-item activo" category="todos"><b>Todos</b></a>
+                    <a href="#" class="category-item" category="serviciosdecomunicacion"><b>Servicios de comunicacion</b></a>
+                    <a href="#" class="category-item" category="consumociclico"><b>Consumo ciclico</b></a>
+                    <a href="#" class="category-item" category="consumodefensivo">Consumo defensivo</b></a>
+                    <a href="#" class="category-item" category="energia"><b>Energia</b></a>
+                    <a href="#" class="category-item" category="financiera">Financiera</b></a>
+                    <a href="#" class="category-item" category="salud"><b>Salud</b></a>
+                    <a href="#" class="category-item" category="industrial"><b>Industrial</b></a>
+                    <a href="#" class="category-item" category="real Estate"><b>Real Estate</b></a>
+                    <a href="#" class="category-item" category="tecnologica"><b>Tecnologica</b></a>
+                    <a href="#" class="category-item" category="utilidades"><b>Utilidades</b></a>
+                </div>
+        </header>
+
+        <section class="grid" id="grid">
+
+            <a class="item" category="${item.category}"  href="../words/${item.href}.pdf">
+            
+               
+
+            <script src="../js/analisis-json.js"></script>
+
+
+        </section>
+
+
+        <div class="borde-top">
+            <footer>
+                <span>Created By <b>Luca Gazze</b> | <span class="far fa-copyright"></span> 2021 All rights
+                    reserved.</span>
+            </footer>
+        </div>
+    </div>
+
+
+    <!--JQUERY-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+
+    <!--JS-->
+    <script src="../js/analisis.js"></script>
+    
+
+</body>
+
+</html>

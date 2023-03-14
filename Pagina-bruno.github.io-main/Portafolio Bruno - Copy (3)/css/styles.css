@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* CODIGO GENERAL */
+
+section {
+  padding: 100px 0;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.analisis {
+  font-family: "Poppins", sans-serif;
+}
+.analisis .analisis-content,
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px 11px;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  z-index: 999;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background: rgb(139, 180, 255);
+  
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color:  rgb(56, 125, 253);
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+  color: rgba(255, 255, 255, 0.822);
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: rgba(0, 0, 0, 0.445);
+  border-bottom: 1px solid black;
+
+  transition: 0.3s ease;
+}
+.navbar.sticky .menu li a:hover {
+  color: rgba(255, 255, 255, 0.918);
+}
+
+/* menu btn styling */
+
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+
+
+/* HOME SECTION */
+.home {
+  display: flex;
+  background: url("../img/originales/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg") no-repeat bottom;
+  height: 100vh;
+  color: black;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row {
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: rgba(12, 60, 150, 0.808);
+  font-weight: 500;
+}
+.home .home-content a {
+  display: inline-block;
+  background: rgba(12, 60, 150, 0.664);
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 30%;
+  border: 2px solid rgba(12, 60, 150, 0.808);
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color: rgba(12, 60, 150, 0.808);
+  background: none;
+}
+
+/* ANALISIS EMPIEZA*/
+
+.analisis,
+.teams {
+  color: #fff;
+  background: #111;
+}
+.analisis h3 {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+.analisis .title::before {
+  color: white;
+}
+.analisis .title::after{
+  background: none;
+  content: "Los mas vistados";
+  z-index: 1;
+}
+.analisis .analisis-content .card {
+  width: calc(33% - 20px);
+  
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 35px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.analisis .analisis-content .card:hover {
+  background: rgba(12, 60, 150, 0.808);
+}
+.analisis .analisis-content .card .box {
+  transition: all 0.3s ease;
+  height: 330px;
+}
+.analisis .analisis-content .card:hover .box {
+  transform: scale(1.05);
+}
+.analisis .analisis-content .card i {
+  font-size: 50px;
+  color: rgba(12, 60, 150, 0.808);
+  transition: color 0.3s ease;
+}
+.analisis .analisis-content .card:hover i {
+  color: white;
+}
+.analisis .analisis-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  margin-bottom: 20px;
+}
+.analisis .analisis-content .card .box img {
+  width: 100%;
+  height: 180px;
+}
+.analisis .ver-mas{
+  color: white;
+  display: block;
+  float: right;
+  margin-right: 70px;
+  border-bottom: 1px solid white;
+}
+.analisis .ver-mas:hover{
+  color: rgba(255, 255, 255, 0.651);
+  border-bottom: 1px solid white;
+}
+
+/* QUIEN SOY*/
+#quien-soy {
+  background: url(../img/originales/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg) top no-repeat;
+  height: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 5px;
+}
+.about-content {
+  display: flex;
+}
+
+.quien-soy .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.quien-soy .about-content .right {
+  width: 55%;
+}
+.quien-soy .about-content .right .text {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.quien-soy .about-content .right p{
+  font-size: 20px;
+}
+.quien-soy .about-content .right #vermas div{
+  font-size: 20px;
+}
+.quien-soy .about-content .right #button{
+  display: inline-block;
+  background: rgba(0, 68, 194, 0.466);
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 7px;
+  margin-top: 10px;
+  border-radius: 20%;
+  border: 1px solid rgba(12, 60, 150, 0.808);
+  transition: 0.5s ease;
+}
+.quien-soy .about-content .right #button:hover{
+  color: rgba(12, 60, 150, 0.808);
+  border-radius: 0%;
+  background: none;
+}
+
+
+
+/* CONTACTO */
+#contacto {
+  background: rgba(0, 0, 0, 0.918);
+  height: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 10px;
+}
+#contacto h1 {
+  display: inline-block;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+  
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* footer section styling */
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background: rgba(12, 60, 150, 0.808);
+  padding: 15px 10px;
+  color: #fff;
+  text-align: center;
+}
+footer span b {
+  color: rgb(7, 13, 24);
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+/* responsive media query start */
+@media (max-width: 1105px) {
+  .home .max-width {
+    width: 100%;
+  }
+  .quien-soy .about-content .column {
+    width: 100%;
+  }
+  .quien-soy .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .quien-soy .about-content .right {
+    padding: 0px;
+    flex: 100%;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0px 50px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+    padding: 7px 12px;
+  }
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  /* NAVBAR */
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: rgba(108, 157, 248, 0.863);
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+    color: white;
+  }
+
+  /* HOME */
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 17px;
+    padding: 5px 10px;
+  }
+  .analisis .analisis-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .contacto .container {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 690px) {
+  .max-width {
+    margin-left: 0px 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .analisis .analisis-content .card {
+    width: 100%;
+  }
+  .card4,
+  .card5,
+  .card6 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+  
+  .analisis .title::after {
+    font-size: 15px;
+  }
+  .home .home-content a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .quien-soy .about-content .right .text {
+    font-size: 19px;
+  }
+  .quien-soy .about-content .left img {
+    height: 200px;
+    width: 200px;
+}
+.quien-soy h2{
+  font-size: 30px;
+}
+#contacto h1{
+  font-size: 20px;
+}
+
+#contacto button{
+  display: inline-block;
+  width: 50%;
+  height: 60px;
+  align-items: center;
+  padding: 0px;
+}
+#my-form {
+  text-align: center;
+  align-items: center;
+}
+.container{
+  height: 50%;
+}
+footer span{
+  font-size: 13px;
+}
+
+}

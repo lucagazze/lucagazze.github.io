@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Gazze</title>
+
+
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="logo">
+
+    <!--Navbar-->
+
+    <section class="navbar" id="navbar">
+
+        <div class="max-width">
+            <div class="logo"><a href="#logo">B<span>G.</span></a></div>
+            <ul class="menu">
+                <li><a href="./analisis.html">Análisis de Empresas</a></li>
+                <li><a href="#ver-mas">Quien soy</a></li>
+                <li><a href="#contacto">Contactame</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Home-->
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-2">Bruno Gazze </div>
+                <div class="text-3"><span class="typing"></span></div>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/?hl=es-la" class="fab fa-instagram" target="_blank"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANALISIS DE EMPRESAS EMPIEZA-->
+
+    <section class="analisis" id="analisis">
+        <div class="max-width">
+            <h3>Destacados del mes</h3>
+            <h2 class="title">Analisis de Empresas</h2>
+            <div class="analisis-content" id="analisis-content">
+
+                <!-- JS DE LOS JSON-->
+                <script src="../js/index-json.js"></script>
+
+
+            </div>
+        </div>
+        <a href="../html/analisis.html" id="ver-mas" class="ver-mas">ver mas...</a>
+        </div>
+    </section>
+
+    <!-- Quien soy section start -->
+    <section class="quien-soy" id="quien-soy">
+        <div class="max-width">
+            <h2 class="title">Quien soy</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img loading="lazy" src="../img/comprimidas/bojack.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">BRUNO GAZZE GONZÁLEZ <span class="typing-2"></span></div>
+                    <p>Soy Bruno Gazze Gonzalez, estudié en la Universidad Nacional de Rosario de Economía, la carrera
+                        Contador Público. A lo largo de la carrera me enfoque en todo el sector financiero- contable, es
+                        la temática que más me gusta, por lo que me fui capacitando de forma individual y externa a la
+                        facultad, sobre estos conceptos (cursos presenciales y virtuales, eventos y conferencias).
+                    <br>
+                        Hace 5 años, empecé con el tema de la inversión en el mercado de renta variable, el cual me
+                        apasiona y estoy desde ese entonces, leyendo, informandome y estudiando a diario. Uno de mis
+                        mayores intereses, es el análisis fundamental. Evaluar a las empresas y analizar sus estados
+                        financieros (balance, estado de resultado y flujo de efectivo), viendo así, las fortalezas y
+                        debilidades de las mismas.
+                <br>
+                        Por otro lado, me formé en Programación Neuro Lingüística, adquiriendo conceptos claves para el
+                        crecimiento y desarrollo tanto personal y laboral.
+                    </p>
+
+                    <span id="vermas" style="display: none">
+                    <div >Agregar, que desde el 2019, estoy colaborando con JF Partners,
+                        que tenemos como fin aportar, enseñar y compartir conocimientos financieros. Centrándome en
+                        analizar empresas y el mercado en general. Somos @jfpartnerscapital en Instagram; @JFPartners en
+                        Spotify y “Aprende a INVERTIR con JFPartners” en YouTube.
+
+                        Mi objetivo es crecer, aportar y compartir.
+
+                        Te invito a que me sigas en Twitter (@BrunoGazze), me gusta compartir análisis resumidos y mis
+                        puntos de vista, noticias e información con relación al mundo de las finanzas, inversión y
+                        economía.
+                    </div>
+                </span>
+                <button type="button" class="btn btn-primary" id="button">Leer mas</button>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contacto empieza -->
+    <section id="contacto">
+        <h1>Contactame</h1>
+        <div class="container">
+            <form action="https://formspree.io/f/mzbyzona" method="POST" id="my-form">
+
+                <div class="form-group">
+                    <label for="firstName"> Nombre </label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+
+                <div class="form-group">
+                    <label for="latsName">Apellido</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="massage">Mensaje</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+
+
+    <!-- FOOTER EMPIEZA -->
+    <footer>
+        <span>Created By <b>Luca Gazze</b> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+
+    <!--JQUERY-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--JS-->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
